@@ -1,0 +1,266 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Browser</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_history">History</string>
+
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_bookmarks">Bookmarks</string>
+
+    <string name="ADMOB_ADS_UNIT_ID">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="ad_attribution" translatable="false">Ad</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header" translatable="false">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title" translatable="false">Your signature</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title" translatable="false">Sync email periodically</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+    <string name="delete">Delete</string>
+    <string name="add_to_home_page">Add To Home Page</string>
+    <string name="share">Share</string>
+    <string name="remove_from_downloads">Remove From Downloads</string>
+    <string name="open_in_new_tab">Open In New Tab</string>
+    <string name="add_to_bookmark">Add to Bookmark</string>
+    <string name="add_from_history">Add from History</string>
+    <string name="add_from_bookmark">Add from Bookmarks</string>
+    <string name="remove_from_home">Remove from Home</string>
+    <string name="settings">Settings</string>
+    <string name="downloads">Downloads</string>
+    <string name="home">Home</string>
+
+    <!--Settings-->
+    <string name="download_location">Download Location</string>
+    <string name="download_only_wifi">Download On Wi-Fi only</string>
+    <string name="download_complete_ringtone">Download Complete Ringtone</string>
+    <string name="download_complete_vibration">Download Complete Vibration</string>
+    <string name="browser">Browser</string>
+    <string name="default_search_engine">Default Search Engine</string>
+    <string name="default_">Default</string>
+    <string name="set_as_default_browser">Set as Default Browser</string>
+    <string name="block_ads">Block Ads</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="about">About</string>
+    <string name="rate_out_app">Rate Our App</string>
+    <string name="share_app">Share App</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <!--settings End-->
+
+    <string name="history">History</string>
+    <string name="incognito">Incognito</string>
+    <string name="desktop_view">Desktop View</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="copy_link_url">Copy Link URL</string>
+    <string name="share_web_page">Share Webpage</string>
+    <string name="exit">Exit</string>
+
+    <string name="no_download_yet">No Download Yet!</string>
+
+    <string name="choose_location">Choose Location :</string>
+    <string name="select">Select</string>
+    <string name="cancel">Cancel</string>
+    <string name="search_or_type_url">Search or type URL </string>
+    <string name="no_history_yet">No History Yet !</string>
+    <string name="files">Files</string>
+    <string name="pictures">Pictures</string>
+    <string name="videos">Videos</string>
+    <string name="audios">Audios</string>
+    <string name="all">All</string>
+    <string name="rename_file">Rename File</string>
+
+    <string name="alertNoDownloadPara">Please play the video first then click on download Button.</string>
+
+    <style name="keyboard_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@drawable/keyboard_divider</item>
+        <item name="android:gravity">center</item>
+        <item name="android:showDividers">beginning|middle|end</item>
+    </style>
+
+    <style name="keyboard_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@drawable/keyboard_button_bg</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="keyboard_number_button" parent="keyboard_button">
+        <item name="android:tag">number_button</item>
+    </style>
+
+
+    <style name="list_view_match">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="hori_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="background">@drawable/bg_main</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+
+    <style name="layout_sub_headline_frag">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="checkBoxSelectAll">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:buttonTint">#9AFFCC15</item>
+    </style>
+
+    <style name="deleteAllImage">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">10dp</item>
+        <item name="android:background">@drawable/delete_drawable</item>
+    </style>
+
+    <style name="view_sub_headline_frag">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">20dp</item>
+        <item name="android:layout_marginVertical" tools:targetApi="o">3dp</item>
+        <item name="android:background">#FFCC15</item>
+    </style>
+
+    <style name="back_activity">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/back_drawable_able</item>
+    </style>
+
+
+    <style name="wrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="matchParent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="matchWrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="home_page_bookmark">
+
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+
+    <style name="linear_top_subfrag_downloads">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">37dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/sub_frag_files_selector_subfrag</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="sub_headlines_frag">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/proxima_nova_alt_light</item>
+    </style>
+
+    <style name="test_linear_top_subfrag_downloads">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#77FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/proxima_nova_alt_bold</item>
+    </style>
+
+
+    <style name="radio_default_searchengine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="paddingStart">5dp</item>
+        <item name="buttonTint">#FFC107</item>
+        <item name="android:layout_marginVertical" tools:targetApi="o">3dp</item>
+    </style>
+
+    <string name="number_zero" translatable="false">0</string>
+    <string name="number_one" translatable="false">1</string>
+    <string name="number_two" translatable="false">2</string>
+    <string name="number_three" translatable="false">3</string>
+    <string name="number_four" translatable="false">4</string>
+    <string name="number_five" translatable="false">5</string>
+    <string name="number_six" translatable="false">6</string>
+    <string name="number_seven" translatable="false">7</string>
+    <string name="number_eight" translatable="false">8</string>
+    <string name="number_nine" translatable="false">9</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_backspace">Back</string>
+    <string name="set_as_wallpaper">Set As Wallpaper</string>
+    <string name="set_as_wallpaper_para">Set as home screen wallpaper or lock screen wallpaper ?</string>
+    <string name="lock_screen">Lock Screen</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="rename">Rename</string>
+    <string name="no_download_alert_title">No Download Video File Found</string>
+    <string name="okay">OKAY</string>
+    <string name="report_to_us">Report to us</string>
+    <string name="location_of_file">Location of File</string>
+    <string name="copy">COPY</string>
+    <string name="photos">PHOTOS</string>
+    <string name="album">ALBUM</string>
+    <string name="audio">AUDIO</string>
+    <string name="folder">FOLDER</string>
+    <string name="denied_storage_permission">Denied Storage Permission !</string>
+    <string name="denied_storage_download_alert_para">Want to download with Device\'s Download Manager ?</string>
+    <string name="download">Download</string>
+    <string name="my_files">My Files</string>
+    <string name="dark_theme">Dark Theme Force</string>
+    <string name="search_in_page">Find In Web Page</string>
+    <string name="next">Next</string>
+
+
+</resources>

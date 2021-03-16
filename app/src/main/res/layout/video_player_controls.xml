@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tempControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/exo_rew"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="26dp"
+            android:rotation="180"
+            android:src="@drawable/ic_seek_bottom_btn" />
+
+
+        <ImageView
+            android:id="@+id/exo_play"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_play_final" />
+
+
+        <ImageView
+            android:id="@+id/exo_pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_pause" />
+
+        <ImageView
+            android:id="@+id/exo_ffwd"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="26dp"
+            android:src="@drawable/ic_seek_bottom_btn" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/temp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/rotateScreenbtnVideoPlayer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_rotation" />
+
+        <ImageView
+            android:id="@+id/lockControlsScreenbtnVideoPlayer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="false"
+            android:src="@drawable/ic_lock_inactive" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/exo_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempControls"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="7dp"
+        android:textColor="#ffffff" />
+
+    <com.google.android.exoplayer2.ui.DefaultTimeBar
+        android:id="@+id/exo_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempControls"
+        android:layout_toStartOf="@+id/exo_duration"
+        android:layout_toEndOf="@+id/exo_position"
+        app:ad_marker_color="#FFCC15"
+        app:bar_height="2dp"
+        app:buffered_color="#95989F"
+        app:played_color="#FFC801"
+        app:scrubber_color="#FFC801"
+        app:unplayed_color="#45424E" />
+
+    <TextView
+        android:id="@+id/exo_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempControls"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#CBCDC8" />
+
+    <ImageView
+        android:id="@+id/menuVideoPlayer"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        android:src="@drawable/menuicon_top_drawable" />
+
+    <ImageView
+        android:id="@+id/muteBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="20dp"
+        android:src="@drawable/ic_unmuted" />
+
+    <LinearLayout
+        android:id="@+id/topLayoutNameAndBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="3dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backVideoPlayer"
+            android:layout_width="35dp"
+            android:layout_margin="2dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back_drawable_able"/>
+        <TextView
+            android:id="@+id/videoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:text="Video Name"
+            android:maxLines="1"
+            android:ellipsize="end"
+
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

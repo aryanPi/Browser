@@ -1,0 +1,25 @@
+5 min, 15min, 30min
+
+RSI of nifty stock price :
+    back bounce >  rsi approx 30  -> buy
+    vice versa with 70 for sell
+
+200MA slope
+
+not if rsi > 80 then MA200 down trean
+
+chart of price of nifty
+
+// scanner :-
+
+future share:
+    if share in 5 min rsi in above 80
+    vice versa
+
+    if share is 5, 15, 30 MA200
+
+     if rsi > 80 then MA200 down trean
+        vice versa
+
+
+case share:-

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchParent"
+    android:background="@color/BackGround"
+    android:orientation="vertical"
+    tools:context=".activities.Downloads">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        style="@style/matchWrap"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/backDownloads"
+            style="@style/back_activity" />
+
+        <TextView
+            android:id="@+id/textMyFiles"
+            style="@style/wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/backDownloads"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="@string/my_files"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/privateFolder"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="10dp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/deleteAllImage"
+            style="@style/deleteAllImage" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAll"
+            style="@style/checkBoxSelectAll"
+            android:layout_toStartOf="@+id/deleteAllImage"
+            android:text="Select All" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/matchWrap"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutSubfragDownloads"
+            style="@style/layout_sub_headline_frag">
+
+            <TextView
+                android:id="@+id/downloads_subheadline_files"
+                style="@style/sub_headlines_frag"
+                android:text="@string/downloads" />
+
+            <View
+                android:id="@+id/viewDownloadsSubFragDownloads"
+                style="@style/view_sub_headline_frag"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSubfragPicture"
+            style="@style/layout_sub_headline_frag">
+
+            <TextView
+                android:id="@+id/pictures_subheadline_files"
+                style="@style/sub_headlines_frag"
+                android:text="@string/pictures" />
+
+            <View
+                android:id="@+id/viewDownloadsSubFragPictures"
+                style="@style/view_sub_headline_frag" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSubfragVideo"
+            style="@style/layout_sub_headline_frag">
+
+            <TextView
+                android:id="@+id/videos_subheadline_files"
+                style="@style/sub_headlines_frag"
+                android:text="@string/videos" />
+
+            <View
+                android:id="@+id/viewDownloadsSubFragVideos"
+                style="@style/view_sub_headline_frag" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSubfragAudio"
+            style="@style/layout_sub_headline_frag">
+
+            <TextView
+                android:id="@+id/audio_subheadline_files"
+                style="@style/sub_headlines_frag"
+                android:text="@string/audios" />
+
+            <View
+                android:id="@+id/viewDownloadsSubFragAudio"
+                style="@style/view_sub_headline_frag" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        style="@style/matchParent" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadingDownloads"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+</LinearLayout>

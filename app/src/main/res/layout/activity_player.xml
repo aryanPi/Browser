@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchParent"
+    android:fitsSystemWindows="false"
+    tools:context=".activities.Activity_Player">
+
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playerView"
+        style="@style/matchParent"
+        android:background="@color/black"
+        app:controller_layout_id="@layout/video_player_controls"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        style="@style/matchParent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            style="@style/matchParent"
+            android:layout_weight="1">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/backSeekAnimation"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:rotation="180"
+                android:visibility="gone"
+                app:lottie_autoPlay="false"
+                app:lottie_rawRes="@raw/forward_new_try"
+                app:lottie_repeatCount="1"
+                app:lottie_speed="3" />
+
+            <ImageView
+                android:id="@+id/backwardImageClick"
+                style="@style/matchParent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/matchParent"
+            android:layout_weight="1">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/forwardSeekAnimation"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:lottie_autoPlay="false"
+                app:lottie_rawRes="@raw/forward_new_try"
+                app:lottie_repeatCount="1"
+                app:lottie_speed="3" />
+
+            <ImageView
+                android:id="@+id/forwardImageClick"
+                style="@style/matchParent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/volumeSeekbar"
+        style="@style/matchWrap"
+        android:layout_marginVertical="10dp"
+        android:max="255"
+        android:progressDrawable="@drawable/background_seekbar"
+        android:thumb="@drawable/thump"
+        android:visibility="gone" />
+
+    <SeekBar
+        android:id="@+id/seekBarBrightness"
+        style="@style/matchWrap"
+        android:layout_below="@+id/volumeSeekbar"
+        android:layout_marginVertical="10dp"
+        android:max="255"
+        android:min="0"
+        android:progressDrawable="@drawable/background_seekbar"
+        android:thumb="@drawable/thump"
+        android:visibility="gone"
+        tools:targetApi="o" />
+
+    <LinearLayout
+        style="@style/wrap"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/brightnessLayout"
+            style="@style/wrap"
+            android:background="@drawable/background_frame_layout_album_name"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_brightness" />
+
+            <TextView
+                android:id="@+id/brightnessTextView"
+                style="@style/wrap"
+                android:layout_marginStart="3dp"
+                android:text="50%"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/soundTextViewLayout"
+            style="@style/wrap"
+            android:background="@drawable/background_frame_layout_album_name"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_volume" />
+
+            <TextView
+                android:id="@+id/soundTextView"
+                style="@style/wrap"
+                android:layout_marginStart="3dp"
+                android:text="50%"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

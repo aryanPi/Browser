@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rLayout"
+    style="@style/matchParent"
+    android:layout_gravity="top"
+    android:gravity="top">
+
+    <ImageView
+        android:id="@+id/blank"
+        style="@style/matchParent"
+        android:background="@drawable/bg_tab_list" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/options"
+        style="@style/matchWrap"
+        android:background="#D0CED6"
+        android:foregroundGravity="top"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/closeAllTab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/circle_bg_new_tab_btn"
+            android:src="@drawable/delete_drawable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/newTabOpenBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/newTabOpenBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/circle_bg_new_tab_btn"
+            android:src="@drawable/add_drawable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/circle_bg_new_tab_btn"
+            android:src="@drawable/back_drawable_able"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/newTabOpenBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/tabList"
+        style="@style/matchWrap"
+        android:layout_below="@+id/options"
+        android:background="@drawable/tablist_bg" />
+
+
+</RelativeLayout>

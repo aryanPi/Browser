@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LocationDetailsActivity">
+
+    <item xmlns:tools="http://schemas.android.com/tools"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        app:showAsAction="ifRoom"
+        android:title="this"
+        tools:context=".LocationDetailsActivity">
+        //the menu list with icon
+        <menu>
+            <item
+                android:id="@+id/action_map_type_normal"
+                android:orderInCategory="100"
+                android:icon="@mipmap/ic_launcher"
+            android:title="Vacation spots" />
+            <item
+                android:id="@+id/action_map_type_satellite"
+                android:orderInCategory="100"
+                android:icon="@mipmap/ic_launcher"
+            android:title="Friends and family" />
+            <item
+                android:id="@+id/action_map_type_hybrid"
+                android:orderInCategory="100"
+                android:icon="@mipmap/ic_launcher"
+            android:title="Restaurants" />
+        </menu>
+    </item>
+</menu>

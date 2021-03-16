@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.photos_frag">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/transparent"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat">
+
+            <LinearLayout style="@style/linear_top_subfrag_downloads">
+
+                <TextView
+                    android:id="@+id/photosSubBtn"
+                    style="@style/test_linear_top_subfrag_downloads"
+                    android:text="@string/photos" />
+
+
+                <TextView
+                    android:id="@+id/albumSubBtn"
+                    style="@style/test_linear_top_subfrag_downloads"
+                    android:text="@string/album" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <FrameLayout
+            android:id="@+id/subFragPhotos_frag"
+            style="@style/matchParent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_marginTop="3dp"
+            android:paddingHorizontal="3dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

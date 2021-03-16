@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchParent"
+    android:background="@color/BackGround"
+    tools:context=".activities.FirstTimeActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/startUpPager"
+        style="@style/matchParent"
+        android:layout_below="@+id/skipFirstTime" />
+
+
+    <TextView
+        android:id="@+id/skipFirstTime"
+        style="@style/wrap"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="skip"
+        android:text="Skip"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/buttonStartupPagebtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle_black"
+        android:backgroundTint="#EBFFCC15"
+        android:onClick="buttonStartupPage" />
+
+    <ImageView
+        android:id="@+id/changeAbleImageFirstTime"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/buttonStartupPagebtn"
+        android:layout_alignTop="@+id/buttonStartupPagebtn"
+        android:layout_alignEnd="@+id/buttonStartupPagebtn"
+        android:layout_alignBottom="@+id/buttonStartupPagebtn"
+        android:padding="5dp"
+        android:src="@drawable/right_arraw" />
+
+</RelativeLayout>

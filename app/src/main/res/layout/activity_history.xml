@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchParent"
+    android:background="@color/BackGround"
+    tools:context=".activities.History">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/noHistory"
+        style="@style/matchParent"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/empty" />
+
+
+    <LinearLayout
+        style="@style/matchParent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+style="@style/matchWrap"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/backBtnHistory"
+                style="@style/back_activity" />
+
+            <TextView
+                android:id="@+id/historyTextView"
+                style="@style/wrap"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="15dp"
+                android:layout_toEndOf="@+id/backBtnHistory"
+                android:text="@string/history"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/selectallBtnHistory"
+                style="@style/checkBoxSelectAll"
+                android:layout_toStartOf="@+id/clearAllHistory"
+                android:text="@string/all" />
+
+            <ImageView
+                android:id="@+id/clearAllHistory"
+                style="@style/deleteAllImage" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_main" />
+        <ScrollView style="@style/matchParent">
+            <LinearLayout
+                android:id="@+id/recycler_view_list"
+                style="@style/matchWrap"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

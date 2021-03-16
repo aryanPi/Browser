@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchParent"
+    android:background="@color/BackGround"
+    android:orientation="vertical"
+    tools:context=".activities.selectLocation">
+
+    <LinearLayout
+        android:id="@+id/relative"
+style="@style/matchWrap"
+        android:layout_marginVertical="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backLocationSelect"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/back_drawable_able" />
+
+        <TextView
+style="@style/wrap"
+            android:layout_marginHorizontal="15dp"
+            android:text="@string/choose_location"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/bg_main" />
+
+    <RelativeLayout
+style="@style/matchParent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/previourSelectedDir"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/previourSelectedDir"
+            android:background="#14FFFFFF" />
+
+        <ListView
+            android:id="@+id/fileLocationList"
+style="@style/matchWrap"
+            android:layout_above="@+id/bottomLinearSelectLocation"
+            android:layout_below="@+id/previourSelectedDir" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/fileLocationList"
+            android:background="#61FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/bottomLinearSelectLocation"
+            style="@style/matchWrap"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+
+            <TextView
+                android:id="@+id/cancelBtnSelectLocation"
+                style="@style/wrap"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="cancel"
+                android:text="@string/cancel"
+                android:textColor="@color/mainYelloColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/SelectBtnSelectLocation"
+                style="@style/wrap"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="selectbtn"
+                android:text="@string/select"
+                android:textColor="@color/mainYelloColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

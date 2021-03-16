@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C000000"
+    android:orientation="vertical"
+    tools:context=".fragment.SearchToolbarFrag">
+
+    <LinearLayout
+        android:paddingVertical="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BackGround"
+        >
+
+        <RelativeLayout
+            android:id="@+id/mainSearchHomePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backSearchBar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/back_drawable_able" />
+
+
+            <LinearLayout
+                style="@style/wrap"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_toStartOf="@+id/historyOnSearchBar"
+                android:layout_toEndOf="@+id/backSearchBar"
+                android:background="@drawable/searchbar_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="2dp"
+                android:paddingVertical="6dp">
+
+                <EditText
+                    android:id="@+id/searchQueryHomePage"
+                    style="@style/wrap"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:hint="@string/search_or_type_url"
+                    android:imeActionLabel="Search"
+                    android:background="@color/transparent"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:paddingHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/hintColor"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <ImageView
+                    android:id="@+id/speak_image_search_home_able"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/ic_microphone" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/historyOnSearchBar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="5dp"
+                android:src="@drawable/history_drawable" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempR">
+
+        <LinearLayout
+            android:id="@+id/searchSuggestionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_toolbar_item_bg"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/doBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

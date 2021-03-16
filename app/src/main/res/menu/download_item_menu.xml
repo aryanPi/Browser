@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/shareDownloaditem"
+    android:title="@string/share"
+    />
+<item android:id="@+id/removeDownloadItem"
+    android:title="@string/remove_from_downloads"/>
+<item android:id="@+id/renameDownloadedItem"
+    android:title="@string/rename_file"/>
+    <item android:id="@+id/downloadLocation_downloaditem"
+        android:title="Download Location"/>
+
+</menu>

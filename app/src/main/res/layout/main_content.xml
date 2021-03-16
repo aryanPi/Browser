@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchParent"
+    android:layout_above="@+id/nav_bottom"
+    android:layout_below="@+id/toolbar_head"
+    android:background="@color/BackGround">
+
+    <RelativeLayout
+        android:id="@+id/homeFragment"
+        style="@style/matchParent"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/home_body"
+            style="@style/matchWrap"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_logo" />
+
+
+            <LinearLayout
+                android:id="@+id/search_bar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginVertical="20dp"
+                android:layout_marginTop="113dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/search_bar"
+                    style="@style/matchWrap"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/searchbar_bg"
+                    android:padding="10dp"
+                    android:paddingHorizontal="10dp"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:id="@+id/searchBtn_mainSearchBar"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_search__1_" />
+
+                    <TextView
+                        android:id="@+id/tep"
+                        style="@style/wrap"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_toStartOf="@+id/speak_image_search_home"
+                        android:layout_toEndOf="@+id/searchBtn_mainSearchBar"
+                        android:gravity="center_vertical"
+                        android:text="@string/search_or_type_url"
+                        android:textColor="#72000000"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/speak_image_search_home"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_microphone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <ScrollView
+                android:id="@+id/screollView"
+                style="@style/matchParent"
+                android:layout_below="@+id/search_bar3">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    style="@style/matchWrap"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        style="@style/matchWrap"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fbImgHomePage"
+                            style="@style/home_page_bookmark"
+                            android:onClick="OpenFB" />
+
+                        <ImageView
+                            android:id="@+id/instaImageHomePage"
+                            style="@style/home_page_bookmark"
+                            android:onClick="OpenInsta" />
+
+                        <ImageView
+                            android:id="@+id/whatsappImageHomePage"
+                            style="@style/home_page_bookmark"
+                            android:onClick="OpenWhatsAppStatudDownloader" />
+
+                        <ImageView
+                            android:id="@+id/vimeoImageHomePage"
+                            style="@style/home_page_bookmark"
+                            android:onClick="OpenVimeo" />
+
+                        <ImageView
+                            android:id="@+id/tubidyImageHomePage"
+                            style="@style/home_page_bookmark"
+                            android:onClick="OpenTubidy" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/matchWrap"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/bookmark2"
+                            style="@style/home_page_bookmark"
+                            android:background="@drawable/main_menu_items_bg"
+                            android:onClick="bookmarkClick"
+                            android:padding="10dp"
+                            android:src="@drawable/add_drawable" />
+
+                        <ImageView
+                            android:id="@+id/bookmark3"
+                            style="@style/home_page_bookmark"
+                            android:background="@drawable/main_menu_items_bg"
+                            android:onClick="bookmarkClick"
+                            android:padding="10dp"
+                            android:src="@drawable/add_drawable" />
+
+                        <ImageView
+                            android:id="@+id/bookmark4"
+                            style="@style/home_page_bookmark"
+                            android:background="@drawable/main_menu_items_bg"
+                            android:onClick="bookmarkClick"
+                            android:padding="10dp"
+                            android:src="@drawable/add_drawable" />
+
+                        <ImageView
+                            android:id="@+id/bookmark5"
+                            style="@style/home_page_bookmark"
+                            android:background="@drawable/main_menu_items_bg"
+                            android:onClick="bookmarkClick"
+                            android:padding="10dp"
+                            android:src="@drawable/add_drawable" />
+
+                        <ImageView
+                            android:id="@+id/bookmark6"
+                            style="@style/home_page_bookmark"
+                            android:background="@drawable/main_menu_items_bg"
+                            android:onClick="bookmarkClick"
+                            android:padding="10dp"
+                            android:src="@drawable/add_drawable" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                style="@style/matchParent"
+                android:layout_below="@+id/screollView"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/fl_adplaceholderMainActivity"
+                    style="@style/matchParent" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/dragable"
+        android:layout_width="10dp"
+        android:layout_height="10dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/active_download_bubble"
+            style="@style/matchParent"
+            app:lottie_rawRes="@raw/active_bg"
+            app:lottie_repeatCount="2" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/downloadBtn"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            app:lottie_rawRes="@raw/downloadbubble" />
+
+        <ImageView
+            android:id="@+id/downloadImageInside"
+            style="@style/matchParent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="25dp"
+            android:src="@drawable/ic_final_download" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/playAsBackgroundMenuPlayer"
+        android:title="Play As Audio Background"/>
+    <item android:id="@+id/lockRotationVideoPlayer"
+        android:title="Lock Rotation"/>
+    <item android:id="@+id/shareVideoPlayerMenu"
+        android:title="@string/share"/>
+
+</menu>

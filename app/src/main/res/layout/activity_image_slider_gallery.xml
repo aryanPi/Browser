@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchParent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".activities.ImageSliderGallery">
+
+    <RelativeLayout
+        android:id="@+id/topRelative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/backImageSliderGallery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/back_drawable_able" />
+
+        <LinearLayout
+            style="@style/wrap"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currentIndexOfImage"
+                style="@style/wrap"
+                android:text="91"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/totalIndexOfImages"
+                style="@style/wrap"
+                android:text="/1"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerImagesGallery"
+        style="@style/matchParent"
+        android:layout_above="@+id/bottomLinearLayout"
+        android:layout_below="@+id/topRelative" />
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+style="@style/matchWrap"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/deleteImageImageSliderGallery"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/delete_now_drawable" />
+
+        <ImageView
+            android:id="@+id/shareImageImageSliderGallery"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/share_drawable" />
+
+        <ImageView
+            android:id="@+id/menuImageImageSliderGallery"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/menuicon_top_drawable" />
+    </LinearLayout>
+
+</RelativeLayout>

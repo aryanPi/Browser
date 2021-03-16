@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recyclerView_photots" type="id" />
+    <item name="recyclerView_album_photots" type="id" />
+
+    <item name="recyclerView_videos" type="id" />
+    <item name="recyclerView_album_videos" type="id" />
+
+    <item name="recyclerView_audio" type="id" />
+    <item name="recyclerView_album_audio" type="id" />
+
+    <item name="downloadmageId" type="id" />
+    <item name="openInNewTabId" type="id" />
+    <item name="shareLinkId" type="id" />
+    <item name="copyLinkId" type="id"/>
+    <item name="en" type="id" />
+    <item name="hi" type="id" />
+    <item name="ga" type="id" />
+    <item name="de" type="id" />
+    <item name="da" type="id" />
+    <item name="el" type="id" />
+    <item name="fr" type="id" />
+    <item name="fi" type="id" />
+
+</resources>

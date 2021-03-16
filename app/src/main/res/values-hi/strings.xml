@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ब्राउज़र</string>
+
+    <string name="title_activity_history">इतिहास</string>
+
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_bookmarks">बुकमार्क</string>
+
+    <string name="ADMOB_ADS_UNIT_ID">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">संदेश</string>
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+
+
+    <string name="delete">हटाएँ</string>
+    <string name="add_to_home_page">होम पेज पर जोड़ें</string>
+    <string name="share">Share</string>
+    <string name="remove_from_downloads">डाउनलोड से निकालें</string>
+    <string name="open_in_new_tab">नए टैब में खुला</string>
+    <string name="add_to_bookmark">बुकमार्क में जोड़ें</string>
+    <string name="add_from_history">इतिहास से जोड़ें</string>
+    <string name="add_from_bookmark">बुकमार्क से जोड़ें</string>
+    <string name="remove_from_home">मुख्य से निकालें </string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="downloads">डाउनलोड</string>
+    <string name="home">मुख्य पृष्ठ</string>
+
+    <!--Settings-->
+    <string name="download_location">स्थान डाउनलोड करें</string>
+    <string name="download_only_wifi">वाई-फाई पर ही डाउनलोड करें</string>
+    <string name="download_complete_ringtone">पूर्ण डाउनलोड के बाद रिंगटोन</string>
+    <string name="download_complete_vibration">पूर्ण डाउनलोड के बाद कंपन</string>
+    <string name="browser">ब्राउज़र</string>
+    <string name="default_search_engine">डिफ़ॉल्ट खोज इंजन</string>
+    <string name="default_">चूक</string>
+    <string name="set_as_default_browser">डिफ़ॉल्ट ब्राउज़र के रूप में सेट करें</string>
+    <string name="block_ads">विज्ञापन ब्लॉक करना</string>
+    <string name="clear_cache">साफ कैश</string>
+    <string name="about">करीबन</string>
+    <string name="rate_out_app">दर हमारे ऐप</string>
+    <string name="share_app">शेयर ऐप</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <!--settings End-->
+
+    <string name="history">इतिहास</string>
+    <string name="incognito">अज्ञात</string>
+    <string name="desktop_view">डेस्कटॉप व्यू</string>
+    <string name="bookmarks">बुकमार्क</string>
+    <string name="copy_link_url">कॉपी लिंक यूआरएल</string>
+    <string name="share_web_page">वेबपेज साझा करें</string>
+    <string name="exit">Exit</string>
+
+    <string name="no_download_yet">कोई डाउनलोड अभी तक नहीं है!</string>
+    <string name="download">डाउनलोड</string>
+    <string name="choose_location">स्थान चुनें:</string>
+    <string name="select">चुनें</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="search_or_type_url">यूआरएल खोजें या टाइप करें</string>
+    <string name="no_history_yet">कोई इतिहास अभी तक नहीं है!</string>
+    <string name="files">फ़ाइलें</string>
+    <string name="pictures">चित्र</string>
+    <string name="videos">वीडियो</string>
+    <string name="audios">ऑडियो</string>
+    <string name="all">सभी</string>
+
+
+    <string name="rename_file">फाइल का नाम बदलें</string>
+    <string name="alertNoDownloadPara" >पहले वीडियो चलाएं फिर डाउनलोड बटन पर क्लिक करें।</string>
+    <string name="btn_backspace" >पिछला</string>
+    <string name="btn_clear" >साफ</string>
+    <string name="set_as_wallpaper">वॉलपेपर सेट करें</string>
+    <string name="set_as_wallpaper_para">लॉक स्क्रीन वॉलपेपर के लिए होम स्क्रीन वॉलपेपर के रूप में सेट करें?</string>
+    <string name="lock_screen">लॉक स्क्रीन</string>
+    <string name="home_screen">होम स्क्रीन</string>
+    <string name="rename">नाम बदलें</string>
+    <string name="no_download_alert_title">कोई डाउनलोड वीडियो फ़ाइल नहीं मिली</string>
+    <string name="okay">ठीक</string>
+    <string name="report_to_us">हमें रिपोर्ट करें</string>
+    <string name="location_of_file">फ़ाइल का स्थान</string>
+    <string name="copy">कॉपी</string>
+    <string name="photos">तस्वीरें</string>
+    <string name="album">एल्बम</string>
+    <string name="audio">ऑडियो</string>
+    <string name="folder">फ़ोल्डर</string>
+    <string name="denied_storage_permission">अस्वीकृत संग्रहण अनुमति!</string>
+    <string name="denied_storage_download_alert_para">डिवाइस के डाउनलोड प्रबंधक के साथ डाउनलोड करना चाहते हैं?</string>
+    <string name="my_files">मेरी फ़ाइलें</string>
+
+</resources>

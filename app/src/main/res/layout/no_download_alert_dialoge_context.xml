@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_popup_custom"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/no_download_alert_title"
+        android:textColor="#FFC107"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:text="@string/alertNoDownloadPara"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/inactiveAnimationNodownloadsAlertDialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false"
+                app:lottie_progress="0"
+                app:lottie_rawRes="@raw/downloadbubble" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:padding="25dp"
+                android:src="@drawable/ic_final_download" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_right_arrow" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/activeAnimationNodownloadsAlertDialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_progress="100"
+                app:lottie_rawRes="@raw/downloadbubble" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:padding="25dp"
+                android:src="@drawable/ic_final_download" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okayNoDownloadsDialog"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_frame_layout_album_name"
+        android:text="@string/okay"
+        android:textSize="15sp"
+        android:textColor="#FFC107" />
+
+    <TextView
+        android:id="@+id/reportToUsDownloadDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="15dp"
+        android:text="@string/report_to_us"
+        android:textColor="#A4FFFFFF" />
+
+
+</LinearLayout>

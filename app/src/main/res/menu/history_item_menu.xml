@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/openInNewTabHistory"
+        android:title="@string/open_in_new_tab" />
+
+    <item
+        android:id="@+id/addToBookmarkHistory"
+        android:title="@string/add_to_bookmark" />
+    <item
+        android:id="@+id/addToHomeHistory"
+        android:title="@string/add_to_home_page" />
+    <item
+        android:id="@+id/deleteHistoryItem"
+        android:title="@string/delete" />
+</menu>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_popup_custom"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/wrap"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="7dp"
+            android:gravity="center_horizontal"
+            android:paddingVertical="6dp"
+            android:text="Select Your Language"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="7dp"
+            android:background="#75FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/RadioBoxGroupLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp">
+
+                <RadioButton
+                    android:id="@id/en"
+                    style="@style/radio_default_searchengine"
+                    android:text="English" />
+
+                <RadioButton
+                    android:id="@id/hi"
+                    style="@style/radio_default_searchengine"
+                    android:text="हिन्दी" />
+
+                <RadioButton
+                    android:id="@id/da"
+                    style="@style/radio_default_searchengine"
+                    android:text="Dansk" />
+
+                <RadioButton
+                    android:id="@id/de"
+                    style="@style/radio_default_searchengine"
+                    android:text="Deutsches" />
+
+                <RadioButton
+                    android:id="@id/el"
+                    style="@style/radio_default_searchengine"
+                    android:text="Ελληνικά" />
+
+                <RadioButton
+                    android:id="@id/fi"
+                    style="@style/radio_default_searchengine"
+                    android:text="Suomalainen" />
+
+                <RadioButton
+                    android:id="@id/fr"
+                    style="@style/radio_default_searchengine"
+                    android:text="Française" />
+
+                <RadioButton
+                    android:id="@id/ga"
+                    style="@style/radio_default_searchengine"
+                    android:text="Gaeilge" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/wrap"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel_btn_lang"
+                style="@style/wrap"
+                android:layout_marginHorizontal="10dp"
+                android:text="CANCEL"
+                android:textColor="#FFCC15"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/select_btn_lang"
+                style="@style/wrap"
+                android:layout_marginHorizontal="10dp"
+                android:text="SELECT"
+                android:textColor="#FFCC15"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

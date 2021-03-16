@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGround"
+    tools:context=".activities.Bookmarks">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/noBookmark"
+        style="@style/matchParent"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/empty" />
+
+
+    <LinearLayout
+style="@style/matchParent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            style="@style/matchWrap"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/backBtnBookmark"
+                style="@style/back_activity" />
+
+            <TextView
+                android:id="@+id/bookmarkTextView"
+                style="@style/wrap"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="5dp"
+                android:layout_toEndOf="@+id/backBtnBookmark"
+                android:text="@string/bookmarks"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/selectAllbookmarks"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_toStartOf="@+id/clearAllBookmark"
+                android:buttonTint="#9AFFCC15"
+                android:text="@string/all"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/clearAllBookmark"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/delete_drawable" />
+
+
+        </RelativeLayout>
+
+        <View style="@style/hori_view" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bookmarListView"
+            style="@style/list_view_match" />
+    </LinearLayout>
+
+</RelativeLayout>
